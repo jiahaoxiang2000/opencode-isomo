@@ -775,6 +775,7 @@ export function Prompt(props: PromptProps) {
                           setStore("prompt", item)
                           setStore("mode", item.mode ?? "normal")
                           restoreExtmarksFromParts(item.parts)
+                          input.cursorOffset = input.plainText.length
                           history.reset()
                         }}
                       />
