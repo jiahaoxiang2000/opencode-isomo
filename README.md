@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://opencode.ai">
+  <a href="https://github.com/jiahaoxiang2000/opencode-isomo">
     <picture>
       <source srcset="packages/console/app/src/asset/logo-ornate-dark.svg" media="(prefers-color-scheme: dark)">
       <source srcset="packages/console/app/src/asset/logo-ornate-light.svg" media="(prefers-color-scheme: light)">
@@ -9,10 +9,19 @@
 </p>
 <p align="center">The open source AI coding agent.</p>
 <p align="center">
+  <strong>Fork of <a href="https://github.com/sst/opencode">sst/opencode</a></strong> with custom development changes
+</p>
+<p align="center">
   <a href="https://opencode.ai/discord"><img alt="Discord" src="https://img.shields.io/discord/1391832426048651334?style=flat-square&label=discord" /></a>
   <a href="https://www.npmjs.com/package/opencode-ai"><img alt="npm" src="https://img.shields.io/npm/v/opencode-ai?style=flat-square" /></a>
-  <a href="https://github.com/sst/opencode/actions/workflows/publish.yml"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/sst/opencode/publish.yml?style=flat-square&branch=dev" /></a>
+  <a href="https://github.com/jiahaoxiang2000/opencode-isomo/actions"><img alt="Build status" src="https://img.shields.io/github/actions/workflow/status/jiahaoxiang2000/opencode-isomo/publish.yml?style=flat-square&branch=main" /></a>
 </p>
+
+---
+
+> **Note:** This is a fork of the official [OpenCode](https://github.com/sst/opencode) repository. For the official source, documentation, and releases, please visit [github.com/sst/opencode](https://github.com/sst/opencode).
+
+---
 
 [![OpenCode Terminal UI](packages/web/src/assets/lander/screenshot.png)](https://opencode.ai)
 
@@ -39,7 +48,7 @@ nix run nixpkgs#opencode           # or github:sst/opencode for latest dev branc
 
 ### Desktop App (BETA)
 
-OpenCode is also available as a desktop application. Download directly from the [releases page](https://github.com/sst/opencode/releases) or [opencode.ai/download](https://opencode.ai/download).
+OpenCode is also available as a desktop application. Download from the official [releases page](https://github.com/sst/opencode/releases) or [opencode.ai/download](https://opencode.ai/download).
 
 | Platform              | Download                              |
 | --------------------- | ------------------------------------- |
@@ -90,7 +99,7 @@ For more info on how to configure OpenCode [**head over to our docs**](https://o
 
 ### Contributing
 
-If you're interested in contributing to OpenCode, please read our [contributing docs](./CONTRIBUTING.md) before submitting a pull request.
+If you're interested in contributing to OpenCode, please read the [official contributing docs](https://github.com/sst/opencode/blob/main/CONTRIBUTING.md). This fork follows the same contribution guidelines.
 
 ### Building on OpenCode
 
@@ -111,6 +120,26 @@ It's very similar to Claude Code in terms of capability. Here are the key differ
 #### What's the other repo?
 
 The other confusingly named repo has no relation to this one. You can [read the story behind it here](https://x.com/thdxr/status/1933561254481666466).
+
+---
+
+## Syncing with Upstream
+
+This fork is synced periodically with the upstream [sst/opencode](https://github.com/sst/opencode) repository. To update this fork with the latest upstream changes:
+
+```bash
+# Fetch upstream changes
+git fetch upstream
+
+# Merge upstream/dev into main
+git checkout main
+git merge upstream/dev
+
+# Push to this fork
+git push origin main
+```
+
+To see the sync history and workflow for this fork, check the [SYNC.md](./SYNC.md) file.
 
 ---
 
